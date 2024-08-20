@@ -1,0 +1,27 @@
+.carousel {
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.carousel * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.infinite-scroll {
+  display: block;
+  height: 100%;
+}
+
+.infinite-scroll > * {
+  float: left;
+  width: 100%;
+  display: none;
+}
+
+.infinite-scroll > *:first-child {
+  display: block;
+}

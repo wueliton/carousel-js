@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="infinite-scroll">
+        <div class="item">
+          <h2>Item 1</h2>
+        </div>
+        <div class="item">
+          <h2>Item 2</h2>
+        </div>
+        <div class="item">
+          <h2>Item 3</h2>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .carousel {
+        overflow: hidden;
+        display: block;
+        margin: auto;
+        position: relative;
+      }
+
+      .carousel * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .infinite-scroll {
+        display: block;
+        height: 100%;
+      }
+
+      .infinite-scroll > * {
+        float: left;
+        width: 100%;
+        display: none;
+      }
+
+      .infinite-scroll > *:first-child {
+        display: block;
+      }
+    </style>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
